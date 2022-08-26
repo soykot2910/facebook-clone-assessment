@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import StoryOne from "../assets/img/home/story1.webp";
 import StoryTwo from "../assets/img/home/story2.webp";
 import StoryThree from "../assets/img/home/story3.webp";
+import UserContext from "../UserContext";
 import { PlusIcon } from "./common/Icons";
 
 const Story = () => {
+  const { userDetails } = useContext(UserContext);
+
   return (
     <>
       <div className="stories">
         <div className="single">
-          {/* <img src={userDetails.profile_pic} alt="" className="s-img" /> */}
+          <img src={userDetails.profile_pic} alt="" className="s-img" />
           <div className="user_pic"></div>
           <div className="svg-section">
             <PlusIcon />
@@ -19,7 +22,6 @@ const Story = () => {
         <SingleStory i_id={StoryOne} name="Md Raisul" />
         <SingleStory i_id={StoryTwo} name="Hasan Khalifa" />
         <SingleStory i_id={StoryThree} name="Jack Daniel" />
-        {/* <SingleStory i_id={StoryFour} name='Mir Ashraf' /> */}
       </div>
     </>
   );

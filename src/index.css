@@ -12,12 +12,13 @@ nav {
   background-color: #242526;
   padding: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 0 !important;
+  padding: 8px 0 !important;
 }
 
 nav .log-srch {
   display: flex;
   align-items: center;
+  width: 40%;
 }
 
 nav .log-srch img {
@@ -63,18 +64,20 @@ nav .log-srch .input-group input::placeholder {
   padding-right: 40px;
 }
 
-.navbar-light .navbar-nav .nav-link.active {
-  border-bottom: 3px solid #2374e1;
+.active {
+  border-left: 3px solid #2374e1;
 }
 
 .navbar-light .navbar-nav .nav-link svg {
   fill: #b0b3b8;
 }
 
-.navbar-light .navbar-nav .nav-link svg.active {
+svg.active {
   fill: #2374e1;
 }
-
+.menu-icon{
+ padding: 4px;
+}
 nav .rig img.pro-pic {
   width: 38px;
   height: 38px;
@@ -638,7 +641,6 @@ nav .rig svg:hover {
   height: 10px;
   border-radius: 50%;
 }
-
 .homepage .middle-section .create-room .images img {
   width: 38px;
   height: 38px;

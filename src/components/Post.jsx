@@ -4,7 +4,7 @@ import CommentIcon from "../assets/img/home/comment.png";
 import ShareIcon from "../assets/img/home/share.png";
 import LikeIcon from "../assets/img/home/like.png";
 
-const Post = ({ post, handleComment, comment, setComment, handleLike }) => (
+const Post = ({ post, handleComment,userDetails, comment, setComment, handleLike }) => (
   <div className="single-posts">
     <div className="header">
       <div className="left">
@@ -98,10 +98,10 @@ const Post = ({ post, handleComment, comment, setComment, handleLike }) => (
           </div>
         )}
         <div className="comment-inp">
-          {/* <img src={userDetails.profile_pic} alt="" /> */}
+          <img src={userDetails.profile_pic} alt="" />
           <form
             onSubmit={(e) => {
-              //   handleComment(userDetails, post.id);
+                handleComment(userDetails, post.id);
               e.preventDefault();
             }}
             style={{ width: "100%" }}
