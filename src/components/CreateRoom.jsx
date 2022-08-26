@@ -23,14 +23,14 @@ const CreateRoom = () => {
       </div>
       <div className="images">
         <div className="single">
-          {/* <img src={userDetails.profile_pic} alt="" /> */}
+          <img src="https://via.placeholder.com/600/771796" alt="" />
         </div>
         <div className="single">
-          {/* <img src={userDetails.profile_pic} alt="" /> */}
+          <img src="https://via.placeholder.com/600/771796" alt="" />
           <div className="active-icon"></div>
         </div>
         <div className="single">
-          {/* <img src={userDetails.profile_pic} alt="" /> */}
+          <img src="https://via.placeholder.com/600/771796" alt="" />
         </div>
       </div>
     </div>
