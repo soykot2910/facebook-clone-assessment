@@ -1,4 +1,5 @@
 import React from "react";
+import NewsFeed from "../components/NewsFeed";
 import SideBar from "../components/SideBar";
 
 const Home = () => {
@@ -13,13 +14,11 @@ const Home = () => {
           </div>
           <div className="col-md-6">
             <div className="middle-section">
-              {/* <MiddleBar /> */}
+              <NewsFeed />
             </div>
           </div>
           <div className="col-md-3">
-            <div className="right-section">
-              {/* <RightBar /> */}
-            </div>
+            <div className="right-section">{/* <RightBar /> */}</div>
           </div>
         </div>
       </div>
