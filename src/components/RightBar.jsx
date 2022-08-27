@@ -15,6 +15,8 @@ const RightBar = () => {
       <div className="chat-lists">
         <SingleChat name="Liam Olivia" active={true} i_id="34t5435" />
         <SingleChat name="Ismail Sheikh" active={false} i_id="65h755" />
+        <SingleChat name="Harry" active={true} i_id="65h755" />
+        <SingleChat name="Gray" active={false} i_id="65h755" />
       </div>
     </>
   );
